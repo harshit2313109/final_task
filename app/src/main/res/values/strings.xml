@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Notice_App</string>
+    <string name="or">Or</string>
+    <string name="customer_care">Customer care</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="google_sign_in">Google Sign in</string>
+    <string name="login">Login</string>
+    <string name="campus_connects">CAMPUS-CONNECTS</string>
+    <string name="d_o_b">D.O.B.</string>
+    <string name="gimg">gimg</string>
+    <string name="support">Support |</string>
+    <string name="terms_conditions">Terms - conditions |</string>
+    <string name="lets_stay_connected">lets stay connected !!</string>
+    <string name="_login">Login</string>
+    <string name="facing_problem_with_the_account">Facing Problem with the account?</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="contentimg">contentimg</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">REGISTER</string>
+    <string name="doesn_t_have_account">Doesn\'t have account ?</string>
+    <string name="email">Email</string>
+    <string name="_login_">login👨🏻‍🏫</string>
+    <string name="__login">Login👨‍🎓</string>
+    <string name="login_____">Login👨🏻‍🏫</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_summary">Dummy Summary</string>
+    <string name="analysis_fragment">analysis fragment</string>
+</resources>
