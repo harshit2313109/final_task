@@ -1,21 +1,18 @@
 package com.example.notice_app
 
 import android.os.Bundle
-import android.widget.EditText
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 
 import nl.joery.animatedbottombar.AnimatedBottomBar
 
 class dashboard_s: AppCompatActivity() {
 
     class HomeFragment : Fragment(R.layout.fragment_home_s)
-    class courseFragment : Fragment(R.layout.fragment_courses_s)
+    class courseFragment : Fragment(R.layout.fragment_chatbot_s)
     class societyFragment : Fragment(R.layout.fragment_society_s)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,7 +51,7 @@ class dashboard_s: AppCompatActivity() {
                     ))
                     .commit()
                     R.id.tab_course  ->  supportFragmentManager.beginTransaction()
-                    .replace(R.id.fragmentContainers,fragment_courses_s.newInstance())
+                    .replace(R.id.fragmentContainers,fragment_chatbot_s.newInstance())
                     .commit()
                     R.id.tab_society -> supportFragmentManager.beginTransaction()
                     .replace(R.id.fragmentContainers, fragment_society_s.newInstance())

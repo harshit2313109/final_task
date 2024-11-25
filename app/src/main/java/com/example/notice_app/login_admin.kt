@@ -38,12 +38,9 @@ class login_admin : AppCompatActivity() {
             startActivity(intent)
         }
 
-
         passwordEditText = findViewById(R.id.password_t)
         loginButton = findViewById(R.id.login_button_t)
         teacherid = findViewById(R.id.teacherid)
-
-
 
         loginButton.setOnClickListener {
 
