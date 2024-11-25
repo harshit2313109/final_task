@@ -58,14 +58,6 @@ class front_screen : AppCompatActivity() {
                     val intent = Intent(this@front_screen, login_admin::class.java)
                     startActivity(intent)
                 }
-
-                "OTHER" -> {
-                    Toast.makeText(
-                        this@front_screen,
-                        "Other role selected. Customize this action.",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
             }
         }
     }

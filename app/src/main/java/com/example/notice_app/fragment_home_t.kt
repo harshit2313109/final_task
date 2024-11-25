@@ -9,7 +9,6 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.notice_app.databinding.FragmentHomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -19,16 +18,18 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [HomeFragment_t.newInstance] factory method to
+ * Use the [fragment_home_t.newInstance] factory method to
  * create an instance of this fragment.
  */
-class HomeFragment_t : Fragment() {
+class fragment_home_t : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
     lateinit var myrecyclerview: RecyclerView
+    lateinit var myrecyclerview2:RecyclerView
     lateinit var  myshowupdata:ArrayList<Rv_Model>
+    lateinit var myshowupdata2:ArrayList<Rv_Model>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,16 +46,30 @@ class HomeFragment_t : Fragment() {
         val avatarImageView = view.findViewById<ImageView>(R.id.drawer)
         myrecyclerview=view.findViewById(R.id.recyclerview)
 
-        myrecyclerview.setOnClickListener{
-                Toast.makeText(requireContext(),"my name is harshit",Toast.LENGTH_SHORT).show()
-            }
+
         myshowupdata = ArrayList()
         myshowupdata.add(Rv_Model("Scholarship Notice", "This is to inform you.... "))
         myshowupdata.add(Rv_Model("Tablet Notice", "Tablets are to be given from...."))
         myshowupdata.add(Rv_Model("Branch change", "the result for the branch change...."))
+        myshowupdata.add(Rv_Model("Result announcement", "the result for the branch change...."))
+        myshowupdata.add(Rv_Model("Sports Event", "the result for the branch change...."))
 
         myrecyclerview.adapter = rv_adapter(myshowupdata,requireContext())
         myrecyclerview.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+
+
+
+        myrecyclerview2=view.findViewById(R.id.recyclerview2)
+        myshowupdata2 = ArrayList()
+        myshowupdata2.add(Rv_Model("Scholarship Notice", "This is to inform you.... "))
+        myshowupdata2.add(Rv_Model("Tablet Notice", "Tablets are to be given from...."))
+        myshowupdata2.add(Rv_Model("Branch change", "the result for the branch change...."))
+        myshowupdata2.add(Rv_Model("Result announcement", "the result for the branch change...."))
+        myshowupdata2.add(Rv_Model("Sports Event", "the result for the branch change...."))
+
+
+        myrecyclerview2.adapter = rv_adapter(myshowupdata2,requireContext())
+        myrecyclerview2.layoutManager = LinearLayoutManager(requireContext())
 
         // Define a list of available avatar drawable resources
         val avatarList = listOf(
@@ -81,7 +96,7 @@ class HomeFragment_t : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        return inflater.inflate(R.layout.fragment_home_t, container, false)
     }
 
     companion object {
@@ -96,7 +111,7 @@ class HomeFragment_t : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            HomeFragment_t().apply {
+            fragment_home_t().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

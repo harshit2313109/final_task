@@ -24,10 +24,10 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/drawer"
+        android:id="@+id/drawer_s"
         android:layout_width="64dp"
         android:layout_height="50dp"
-        android:background="@drawable/avatar_3"
+        android:background="@color/transparent"
         android:src="@drawable/pimage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,21 +37,45 @@
         app:layout_constraintVertical_bias="0.023"
         app:shapeAppearanceOverlay="@style/CircleShape" />
 
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="215dp"
-        android:layout_height="37dp"
-        android:fontFamily="@font/roboto"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:text=" Harshit Gautam"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="282dp"
+            android:layout_height="53dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text=" Harshit Gautam"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Notices For You"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/recyclerView3"
+            app:layout_constraintTop_toTopOf="@+id/imageViewu" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView3"
+            android:layout_width="278dp"
+            android:layout_height="451dp"
+            android:layout_marginTop="36dp"
+            tools:listitem="@layout/rv_item2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

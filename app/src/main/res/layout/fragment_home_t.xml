@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment_t"
+    tools:context=".fragment_home_t"
     android:background="@drawable/login_back">
 
   <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,7 +27,7 @@
           android:id="@+id/drawer"
           android:layout_width="64dp"
           android:layout_height="50dp"
-          android:background="@drawable/avatar_8"
+          android:background="@color/transparent"
           android:src="@drawable/pimage"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +44,7 @@
           android:fontFamily="@font/roboto"
           android:gravity="center"
           android:text=" Niti Maheshwari"
+          android:textColor="@color/black"
           android:textSize="20sp"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
@@ -55,8 +56,8 @@
 
       <TextView
           android:id="@+id/textView15"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
+          android:layout_width="371dp"
+          android:layout_height="33dp"
           android:layout_marginStart="10dp"
           android:fontFamily="@font/roboto"
           android:text="Notices For You"
@@ -64,38 +65,49 @@
           android:textSize="20sp"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="1.0"
+          app:layout_constraintHorizontal_bias="0.2"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toTopOf="@+id/imageViewu"
-          app:layout_constraintVertical_bias="0.048" />
+          app:layout_constraintVertical_bias="0.052" />
 
       <TextView
           android:id="@+id/textView16"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:fontFamily="@font/roboto"
           android:text="Notices issued By You"
           android:textColor="@color/white"
-          android:fontFamily="@font/roboto"
           android:textSize="20sp"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.09"
+          app:layout_constraintHorizontal_bias="0.125"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toTopOf="@+id/imageViewu"
-          app:layout_constraintVertical_bias="0.503" />
+          app:layout_constraintVertical_bias="0.52" />
 
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerview"
+          android:layout_width="308dp"
+          android:layout_height="167dp"
+          app:layout_constraintBottom_toTopOf="@+id/textView16"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.421"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/imageViewu"
+          app:layout_constraintVertical_bias="0.77"
+          tools:listitem="@layout/rv_item" />
 
-
-          <androidx.recyclerview.widget.RecyclerView
-              android:id="@+id/recyclerview"
-              android:layout_width="match_parent"
-              android:layout_height="200dp"
-              app:layout_constraintBottom_toBottomOf="parent"
-              app:layout_constraintEnd_toEndOf="parent"
-              app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toTopOf="@+id/imageViewu"
-              app:layout_constraintVertical_bias="0.195"
-              tools:listitem="@layout/rv_item" />
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerview2"
+          android:layout_width="311dp"
+          android:layout_height="247dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.229"
+          app:layout_constraintStart_toStartOf="@+id/textView16"
+          app:layout_constraintTop_toBottomOf="@+id/textView16"
+          app:layout_constraintVertical_bias="0.466"
+          tools:listitem="@layout/rv_item2" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -2,241 +2,205 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-   android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="800dp">
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="800dp"
-    tools:context=".fragment_society_s"
-    android:background="@drawable/login_back"
-  >
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="800dp">
-
-        <TextView
-            android:id="@+id/textView12"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:fontFamily="@font/font4"
-            android:gravity="center"
-            android:text="Welcome To campus Connects "
-            android:textSize="40sp"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            android:layout_height="800dp"
+            tools:context=".fragment_society_s"
+            android:background="@drawable/login_back"
+            >
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/ccc"
-            android:layout_width="129dp"
-            android:layout_height="120dp"
-            android:clipToOutline="true"
-            android:clickable="true"
-            android:focusable="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.152"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.16"
-            app:shapeAppearanceOverlay="@style/Circlesociety"
-            app:srcCompat="@drawable/ccc">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="900dp">
 
-        </com.google.android.material.imageview.ShapeableImageView>
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font1"
-            android:text="Tech Society"
-            android:textSize="24dp"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.158"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.077" />
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/font4"
+                    android:gravity="center"
+                    android:text="Welcome To campus Connects "
+                    android:textColor="@color/black"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="129dp"
-            android:layout_height="120dp"
-            android:id="@+id/csi"
-            android:clipToOutline="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.152"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.55"
-            app:shapeAppearanceOverlay="@style/Circlesociety"
-            app:srcCompat="@drawable/csi">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ccc"
+                    android:layout_width="129dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="24dp"
+                    android:clickable="true"
+                    android:clipToOutline="true"
+                    android:focusable="true"
+                    app:layout_constraintEnd_toEndOf="@+id/textView17"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:shapeAppearanceOverlay="@style/Circlesociety"
+                    app:srcCompat="@drawable/ccc">
 
-        </com.google.android.material.imageview.ShapeableImageView>
+                </com.google.android.material.imageview.ShapeableImageView>
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="129dp"
-            android:layout_height="120dp"
-            android:id="@+id/conatus"
-            android:clipToOutline="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.152"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.351"
-            app:shapeAppearanceOverlay="@style/Circlesociety"
-            app:srcCompat="@drawable/conatus">
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="143dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/font1"
+                    android:text="Tech Society"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView12"
+                    app:layout_constraintHorizontal_bias="0.059"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-        </com.google.android.material.imageview.ShapeableImageView>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/csi"
+                    android:layout_width="129dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:clipToOutline="true"
+                    app:layout_constraintEnd_toEndOf="@+id/conatus"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/conatus"
+                    app:layout_constraintTop_toBottomOf="@+id/conatus"
+                    app:shapeAppearanceOverlay="@style/Circlesociety"
+                    app:srcCompat="@drawable/csi">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="129dp"
-            android:layout_height="120dp"
-            android:id="@+id/pc"
-            android:clipToOutline="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.822"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.351"
-            app:shapeAppearanceOverlay="@style/Circlesociety"
-            app:srcCompat="@drawable/pc">
+                </com.google.android.material.imageview.ShapeableImageView>
 
-        </com.google.android.material.imageview.ShapeableImageView>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/conatus"
+                    android:layout_width="129dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="12dp"
+                    android:clipToOutline="true"
+                    app:layout_constraintEnd_toEndOf="@+id/ccc"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/ccc"
+                    app:layout_constraintTop_toBottomOf="@+id/ccc"
+                    app:shapeAppearanceOverlay="@style/Circlesociety"
+                    app:srcCompat="@drawable/conatus">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="129dp"
-            android:layout_height="120dp"
-            android:clipToOutline="true"
-            android:id="@+id/si"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.822"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.16"
-            app:shapeAppearanceOverlay="@style/Circlesociety"
-            app:srcCompat="@drawable/si_logo">
+                </com.google.android.material.imageview.ShapeableImageView>
 
-        </com.google.android.material.imageview.ShapeableImageView>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/pc"
+                    android:layout_width="129dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="24dp"
+                    android:clipToOutline="true"
+                    app:layout_constraintEnd_toEndOf="@+id/si"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/conatus"
+                    app:layout_constraintTop_toBottomOf="@+id/si"
+                    app:shapeAppearanceOverlay="@style/Circlesociety"
+                    app:srcCompat="@drawable/pc">
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font1"
-            android:text="Cultural society"
-            android:textSize="24dp"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.176"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.658" />
+                </com.google.android.material.imageview.ShapeableImageView>
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="129dp"
-            android:layout_height="120dp"
-            android:clipToOutline="true"
-            android:id="@+id/taal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.152"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:shapeAppearanceOverlay="@style/Circlesociety"
-            app:srcCompat="@drawable/taaal">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/si"
+                    android:layout_width="129dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="12dp"
+                    android:clipToOutline="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.613"
+                    app:layout_constraintStart_toEndOf="@+id/ccc"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:shapeAppearanceOverlay="@style/Circlesociety"
+                    app:srcCompat="@drawable/si_logo">
 
-        </com.google.android.material.imageview.ShapeableImageView>
+                </com.google.android.material.imageview.ShapeableImageView>
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="129dp"
-            android:layout_height="120dp"
-            android:clipToOutline="true"
-            android:id="@+id/renessa"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.822"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:shapeAppearanceOverlay="@style/Circlesociety"
-            app:srcCompat="@drawable/renaisse">
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/font1"
+                    android:text="Cultural society"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    app:layout_constraintEnd_toEndOf="@+id/csi"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/csi"
+                    app:layout_constraintTop_toBottomOf="@+id/csi" />
 
-        </com.google.android.material.imageview.ShapeableImageView>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/taal"
+                    android:layout_width="129dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:clipToOutline="true"
+                    app:layout_constraintEnd_toEndOf="@+id/horizon"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/horizon"
+                    app:layout_constraintTop_toBottomOf="@+id/horizon"
+                    app:shapeAppearanceOverlay="@style/Circlesociety"
+                    app:srcCompat="@drawable/taaal">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="129dp"
-            android:layout_height="120dp"
-            android:clipToOutline="true"
-            android:id="@+id/horizon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.152"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.794"
-            app:shapeAppearanceOverlay="@style/Circlesociety"
-            app:srcCompat="@drawable/horizonn">
+                </com.google.android.material.imageview.ShapeableImageView>
 
-        </com.google.android.material.imageview.ShapeableImageView>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/renessa"
+                    android:layout_width="129dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:clipToOutline="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/footprints"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/footprints"
+                    app:layout_constraintTop_toBottomOf="@+id/footprints"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:shapeAppearanceOverlay="@style/Circlesociety"
+                    app:srcCompat="@drawable/renaisse">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="129dp"
-            android:layout_height="120dp"
-            android:clipToOutline="true"
-            android:id="@+id/footprints"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.822"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.794"
-            app:shapeAppearanceOverlay="@style/Circlesociety"
-            app:srcCompat="@drawable/footprints">
+                </com.google.android.material.imageview.ShapeableImageView>
 
-        </com.google.android.material.imageview.ShapeableImageView>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/horizon"
+                    android:layout_width="129dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:clipToOutline="true"
+                    app:layout_constraintEnd_toEndOf="@+id/textView18"
+                    app:layout_constraintHorizontal_bias="0.289"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:shapeAppearanceOverlay="@style/Circlesociety"
+                    app:srcCompat="@drawable/horizonn">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="444dp"
-            android:text="Button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.818"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                </com.google.android.material.imageview.ShapeableImageView>
 
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="40dp"
-            android:gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
-            android:text="0"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.781"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/footprints"
+                    android:layout_width="129dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="20dp"
+                    android:clipToOutline="true"
+                    app:layout_constraintStart_toEndOf="@+id/horizon"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:shapeAppearanceOverlay="@style/Circlesociety"
+                    app:srcCompat="@drawable/footprints">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.imageview.ShapeableImageView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</FrameLayout>
+        </FrameLayout>
     </LinearLayout>
 </ScrollView>

@@ -1,14 +1,18 @@
 package com.example.notice_app
 
 import android.os.Bundle
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+
 import nl.joery.animatedbottombar.AnimatedBottomBar
 
-class dashboard_s : AppCompatActivity() {
+class dashboard_s: AppCompatActivity() {
 
     class HomeFragment : Fragment(R.layout.fragment_home_s)
     class courseFragment : Fragment(R.layout.fragment_courses_s)
@@ -24,12 +28,15 @@ class dashboard_s : AppCompatActivity() {
             insets
         }
 
-        val bottomBar = findViewById<nl.joery.animatedbottombar.AnimatedBottomBar>(R.id.bottom_bar)
+        val bottomBar = findViewById<AnimatedBottomBar>(R.id.bottom_bar)
 
         // Load the default fragment
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainers, HomeFragment())
+                .replace(R.id.fragmentContainers,fragment_home_s.newInstance(
+                    param1 = "param1",
+                    param2 = "param2"
+                ) )
                 .commit()
         }
         bottomBar.setOnTabSelectListener(object : AnimatedBottomBar.OnTabSelectListener {
@@ -40,17 +47,25 @@ class dashboard_s : AppCompatActivity() {
                 newTab: AnimatedBottomBar.Tab
             ) {
                 when (newTab.id) {
-                    R.id.tab_home -> loadFragment(HomeFragment())
-                    R.id.tab_course-> loadFragment(courseFragment())
-                    R.id.tab_society -> loadFragment(societyFragment())
+                    R.id.tab_home -> supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainers, fragment_home_s.newInstance(
+                        param1 = "param1",
+                        param2 = "param2"
+                    ))
+                    .commit()
+                    R.id.tab_course  ->  supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainers,fragment_courses_s.newInstance())
+                    .commit()
+                    R.id.tab_society -> supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainers, fragment_society_s.newInstance())
+                    .commit()
 
                 }
             }
         })
     }
-    private fun loadFragment(fragment: Fragment) {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainers, fragment)
-            .commit()
-    }
-}
+
+        }
+
+        // Rest of your fragment cod
+
