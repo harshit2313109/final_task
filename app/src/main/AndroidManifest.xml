@@ -18,9 +18,7 @@
         <activity
             android:name=".Registration_s"
             android:exported="true" />
-        <activity
-            android:name=".dashboard_s"
-            android:exported="true" />
+
         <activity
             android:name=".dashboard_t"
             android:exported="true" />
@@ -32,6 +30,9 @@
             android:exported="true" />
         <activity
             android:name=".login_student"
+            android:exported="true" />
+        <activity
+            android:name=".dashboard_s"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

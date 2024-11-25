@@ -72,6 +72,7 @@
             android:layout_height="451dp"
             android:layout_marginTop="36dp"
             tools:listitem="@layout/rv_item2"
+            android:backgroundTint="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
